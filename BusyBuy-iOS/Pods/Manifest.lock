@@ -1,0 +1,42 @@
+PODS:
+  - AHKActionSheet (0.5.3)
+  - Alamofire (3.1.0)
+  - AMPopTip (0.9.12)
+  - AMWaveTransition (0.6.0)
+  - Bolts/Tasks (1.4.0)
+  - BubbleTransition (1.0.0)
+  - ChameleonFramework (2.0.4):
+    - ChameleonFramework/Default (= 2.0.4)
+  - ChameleonFramework/Default (2.0.4)
+  - Eureka (1.1.0)
+  - Parse (1.9.1):
+    - Bolts/Tasks (>= 1.4.0)
+  - pop (1.0.8)
+  - SwiftyJSON (2.3.0)
+
+DEPENDENCIES:
+  - AHKActionSheet (~> 0.5)
+  - Alamofire (~> 3.0)
+  - AMPopTip (~> 0.9)
+  - AMWaveTransition (~> 0.6)
+  - BubbleTransition (~> 1.0)
+  - ChameleonFramework (~> 2.0)
+  - Eureka (~> 1.0)
+  - Parse (~> 1.9)
+  - pop (~> 1.0)
+  - SwiftyJSON (~> 2.3)
+
+SPEC CHECKSUMS:
+  AHKActionSheet: 0b7d3bc6467dd934441fd82beb3911fc1f7bdfd2
+  Alamofire: 415bd7f56197722978759078486689f7ef913dce
+  AMPopTip: 3c98a9b38148868366b57765064bd9565f653038
+  AMWaveTransition: a00588006f144d289a390aabcfa1fa1e16bb9296
+  Bolts: 0e9bce58b9b9f5e8a7a4d47b16d2fabec289072b
+  BubbleTransition: 4fb3eba68c166d7327a90de8619afadbbd4d6776
+  ChameleonFramework: 5abe69b1f2a6cc79c3c435fcd9d3d855748225ee
+  Eureka: 9b198a9f4098a1e75df31dde502105bc0b7e305b
+  Parse: 54a965c8c19a6dde90284ab654dbcc77ef8c001b
+  pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
+  SwiftyJSON: 8d6b61a70277ef2a5d710d372e06e7e2d87fb9e4
+
+COCOAPODS: 0.39.0.beta.5

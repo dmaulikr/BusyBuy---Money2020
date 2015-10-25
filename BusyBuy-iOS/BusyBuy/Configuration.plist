@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Secure Base URL</key>
+	<string>https://apisandbox.dev.clover.com/v3</string>
+	<key>Parse Credentials</key>
+	<dict>
+		<key>Client ID</key>
+		<string>hbU9tCZAw9XO9NHgxLKElKjnlZFapRwp3vdLQaAS</string>
+		<key>Client Secret</key>
+		<string>TSybznyW2G7GyAZNPHX6K4naReL3OzqKlIdzK977</string>
+	</dict>
+	<key>Payeezy Credentials</key>
+	<dict>
+		<key>API Key</key>
+		<string>W4My6zpN10AiYEcNdyxAUu9zEFJ1qcw6</string>
+		<key>API Secret</key>
+		<string>134a125be05b8f9a874604abb9f23609b8d150646c0a6d55a5449cff81e60369</string>
+		<key>Merchant Token</key>
+		<string>fdoa-a480ce8951daa73262734cf102641994c1e55e7cdf4c02b6</string>
+	</dict>
+	<key>ApplePay Merchant ID</key>
+	<string>merchant.com.cert.PAIGH0</string>
+</dict>
+</plist>

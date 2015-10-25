@@ -1,0 +1,839 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A2EF68C04A93B6C62A69BA3 /* Pods_BusyBuy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B1BE969F0CCDBE7FD45569 /* Pods_BusyBuy.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B93672171BDCFBE90095C016 /* MerchantTransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93672161BDCFBE90095C016 /* MerchantTransactionCell.swift */; };
+		B93672191BDD07B70095C016 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93672181BDD07B70095C016 /* Transaction.swift */; };
+		B99BA9E31BDC069800EF458F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B99BA9E11BDC069800EF458F /* Main.storyboard */; };
+		B99BA9E51BDC069800EF458F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B99BA9E41BDC069800EF458F /* Assets.xcassets */; };
+		B99BA9E81BDC069800EF458F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B99BA9E61BDC069800EF458F /* LaunchScreen.storyboard */; };
+		B99BA9F31BDC069800EF458F /* BusyBuyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99BA9F21BDC069800EF458F /* BusyBuyTests.swift */; };
+		B99BA9FE1BDC069800EF458F /* BusyBuyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99BA9FD1BDC069800EF458F /* BusyBuyUITests.swift */; };
+		B9AA57291BDC5FC800DF0405 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9AA57281BDC5FC800DF0405 /* PassKit.framework */; };
+		B9AA572B1BDC609200DF0405 /* InAppSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9AA572A1BDC609200DF0405 /* InAppSDK.framework */; };
+		B9AA572F1BDC7D6600DF0405 /* DBeaconKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA572E1BDC7D6600DF0405 /* DBeaconKit.swift */; };
+		B9AA57311BDC861700DF0405 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA57301BDC861700DF0405 /* SignupViewController.swift */; };
+		B9AA57331BDC862400DF0405 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA57321BDC862400DF0405 /* SignInViewController.swift */; };
+		B9AA57351BDC863A00DF0405 /* NotificationRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA57341BDC863A00DF0405 /* NotificationRequestViewController.swift */; };
+		B9AA57371BDC864C00DF0405 /* LocationAccessRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA57361BDC864C00DF0405 /* LocationAccessRequestViewController.swift */; };
+		B9AA57391BDC8C2900DF0405 /* KaushanScript.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9AA57381BDC8C2900DF0405 /* KaushanScript.ttf */; };
+		B9AA573B1BDC90BE00DF0405 /* StoryBoard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA573A1BDC90BE00DF0405 /* StoryBoard+Extensions.swift */; };
+		B9AA573D1BDC9F9900DF0405 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA573C1BDC9F9900DF0405 /* LogInViewController.swift */; };
+		B9AA573F1BDCAB5400DF0405 /* BarCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA573E1BDCAB5400DF0405 /* BarCodeViewController.swift */; };
+		B9AA57431BDCC4AC00DF0405 /* OrderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA57421BDCC4AC00DF0405 /* OrderListViewController.swift */; };
+		B9AA57471BDCC7FD00DF0405 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA57461BDCC7FD00DF0405 /* Theme.swift */; };
+		B9AA574C1BDCC88900DF0405 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA57481BDCC88900DF0405 /* DateHelper.swift */; };
+		B9AA574D1BDCC88900DF0405 /* UIColor+FlatColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA57491BDCC88900DF0405 /* UIColor+FlatColors.swift */; };
+		B9AA574E1BDCC88900DF0405 /* UIFont+CapGram.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA574A1BDCC88900DF0405 /* UIFont+CapGram.swift */; };
+		B9AA574F1BDCC88900DF0405 /* UITabBar+CapGram.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA574B1BDCC88900DF0405 /* UITabBar+CapGram.swift */; };
+		B9AA57511BDCDB7800DF0405 /* ProfileInputFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA57501BDCDB7800DF0405 /* ProfileInputFormViewController.swift */; };
+		B9B36B371BDC0889001EF475 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B36B351BDC0889001EF475 /* AppDelegate.swift */; };
+		B9B36B381BDC0889001EF475 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B36B361BDC0889001EF475 /* ViewController.swift */; };
+		B9B36B3A1BDC18F6001EF475 /* AppDelegate+BusyBuy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B36B391BDC18F6001EF475 /* AppDelegate+BusyBuy.swift */; };
+		B9B36B3C1BDC1995001EF475 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B36B3B1BDC1995001EF475 /* Configuration.swift */; };
+		B9B36B3F1BDC19B9001EF475 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9B36B3E1BDC19B9001EF475 /* Configuration.plist */; };
+		B9B36B411BDC1A00001EF475 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B36B401BDC1A00001EF475 /* Constants.swift */; };
+		B9B36B431BDC220F001EF475 /* NotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B36B421BDC220F001EF475 /* NotificationHelper.swift */; };
+		B9B36B481BDC3A8A001EF475 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B36B461BDC3A8A001EF475 /* HTTPClient.swift */; };
+		B9B36B491BDC3A8A001EF475 /* HTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B36B471BDC3A8A001EF475 /* HTTPManager.swift */; };
+		B9B36B511BDC4DE8001EF475 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B36B501BDC4DE8001EF475 /* SystemConfiguration.framework */; };
+		B9B36B531BDC4DF8001EF475 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B36B521BDC4DF8001EF475 /* StoreKit.framework */; };
+		B9B36B571BDC562B001EF475 /* PayeezyClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B36B551BDC562B001EF475 /* PayeezyClient.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B99BA9EF1BDC069800EF458F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B99BA9D21BDC069800EF458F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B99BA9D91BDC069800EF458F;
+			remoteInfo = BusyBuy;
+		};
+		B99BA9FA1BDC069800EF458F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B99BA9D21BDC069800EF458F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B99BA9D91BDC069800EF458F;
+			remoteInfo = BusyBuy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D4ECB1C9FC953DB087613C3 /* Pods-BusyBuy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusyBuy.release.xcconfig"; path = "Pods/Target Support Files/Pods-BusyBuy/Pods-BusyBuy.release.xcconfig"; sourceTree = "<group>"; };
+		32E8288405D7504F3C9AF060 /* Pods-BusyBuy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusyBuy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BusyBuy/Pods-BusyBuy.debug.xcconfig"; sourceTree = "<group>"; };
+		78B1BE969F0CCDBE7FD45569 /* Pods_BusyBuy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusyBuy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B93672161BDCFBE90095C016 /* MerchantTransactionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MerchantTransactionCell.swift; sourceTree = "<group>"; };
+		B93672181BDD07B70095C016 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		B99BA9DA1BDC069800EF458F /* BusyBuy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusyBuy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B99BA9E21BDC069800EF458F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B99BA9E41BDC069800EF458F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		B99BA9E71BDC069800EF458F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B99BA9E91BDC069800EF458F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B99BA9EE1BDC069800EF458F /* BusyBuyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusyBuyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B99BA9F21BDC069800EF458F /* BusyBuyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusyBuyTests.swift; sourceTree = "<group>"; };
+		B99BA9F41BDC069800EF458F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B99BA9F91BDC069800EF458F /* BusyBuyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusyBuyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B99BA9FD1BDC069800EF458F /* BusyBuyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusyBuyUITests.swift; sourceTree = "<group>"; };
+		B99BA9FF1BDC069800EF458F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9AA57281BDC5FC800DF0405 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		B9AA572A1BDC609200DF0405 /* InAppSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InAppSDK.framework; sourceTree = "<group>"; };
+		B9AA572E1BDC7D6600DF0405 /* DBeaconKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBeaconKit.swift; sourceTree = "<group>"; };
+		B9AA57301BDC861700DF0405 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		B9AA57321BDC862400DF0405 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		B9AA57341BDC863A00DF0405 /* NotificationRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationRequestViewController.swift; sourceTree = "<group>"; };
+		B9AA57361BDC864C00DF0405 /* LocationAccessRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationAccessRequestViewController.swift; sourceTree = "<group>"; };
+		B9AA57381BDC8C2900DF0405 /* KaushanScript.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KaushanScript.ttf; sourceTree = "<group>"; };
+		B9AA573A1BDC90BE00DF0405 /* StoryBoard+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoryBoard+Extensions.swift"; sourceTree = "<group>"; };
+		B9AA573C1BDC9F9900DF0405 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		B9AA573E1BDCAB5400DF0405 /* BarCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarCodeViewController.swift; sourceTree = "<group>"; };
+		B9AA57421BDCC4AC00DF0405 /* OrderListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderListViewController.swift; sourceTree = "<group>"; };
+		B9AA57461BDCC7FD00DF0405 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		B9AA57481BDCC88900DF0405 /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		B9AA57491BDCC88900DF0405 /* UIColor+FlatColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+FlatColors.swift"; sourceTree = "<group>"; };
+		B9AA574A1BDCC88900DF0405 /* UIFont+CapGram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+CapGram.swift"; sourceTree = "<group>"; };
+		B9AA574B1BDCC88900DF0405 /* UITabBar+CapGram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBar+CapGram.swift"; sourceTree = "<group>"; };
+		B9AA57501BDCDB7800DF0405 /* ProfileInputFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileInputFormViewController.swift; sourceTree = "<group>"; };
+		B9B36B351BDC0889001EF475 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B9B36B361BDC0889001EF475 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B9B36B391BDC18F6001EF475 /* AppDelegate+BusyBuy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+BusyBuy.swift"; sourceTree = "<group>"; };
+		B9B36B3B1BDC1995001EF475 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		B9B36B3E1BDC19B9001EF475 /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
+		B9B36B401BDC1A00001EF475 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B9B36B421BDC220F001EF475 /* NotificationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationHelper.swift; sourceTree = "<group>"; };
+		B9B36B441BDC36C1001EF475 /* BusyBuy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BusyBuy.entitlements; sourceTree = "<group>"; };
+		B9B36B461BDC3A8A001EF475 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		B9B36B471BDC3A8A001EF475 /* HTTPManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPManager.swift; sourceTree = "<group>"; };
+		B9B36B4F1BDC41DA001EF475 /* BusyBuy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BusyBuy-Bridging-Header.h"; sourceTree = "<group>"; };
+		B9B36B501BDC4DE8001EF475 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B9B36B521BDC4DF8001EF475 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		B9B36B551BDC562B001EF475 /* PayeezyClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PayeezyClient.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B99BA9D71BDC069800EF458F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9AA57291BDC5FC800DF0405 /* PassKit.framework in Frameworks */,
+				B9B36B531BDC4DF8001EF475 /* StoreKit.framework in Frameworks */,
+				B9B36B571BDC562B001EF475 /* PayeezyClient.framework in Frameworks */,
+				B9B36B511BDC4DE8001EF475 /* SystemConfiguration.framework in Frameworks */,
+				B9AA572B1BDC609200DF0405 /* InAppSDK.framework in Frameworks */,
+				4A2EF68C04A93B6C62A69BA3 /* Pods_BusyBuy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B99BA9EB1BDC069800EF458F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B99BA9F61BDC069800EF458F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CDA86CB299D2679A877DF0D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32E8288405D7504F3C9AF060 /* Pods-BusyBuy.debug.xcconfig */,
+				1D4ECB1C9FC953DB087613C3 /* Pods-BusyBuy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		77D958C8A67DDE45596119E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9AA57281BDC5FC800DF0405 /* PassKit.framework */,
+				B9B36B521BDC4DF8001EF475 /* StoreKit.framework */,
+				B9B36B501BDC4DE8001EF475 /* SystemConfiguration.framework */,
+				78B1BE969F0CCDBE7FD45569 /* Pods_BusyBuy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B99BA9D11BDC069800EF458F = {
+			isa = PBXGroup;
+			children = (
+				B99BA9DC1BDC069800EF458F /* BusyBuy */,
+				B99BA9F11BDC069800EF458F /* BusyBuyTests */,
+				B99BA9FC1BDC069800EF458F /* BusyBuyUITests */,
+				B99BA9DB1BDC069800EF458F /* Products */,
+				2CDA86CB299D2679A877DF0D /* Pods */,
+				77D958C8A67DDE45596119E2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B99BA9DB1BDC069800EF458F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B99BA9DA1BDC069800EF458F /* BusyBuy.app */,
+				B99BA9EE1BDC069800EF458F /* BusyBuyTests.xctest */,
+				B99BA9F91BDC069800EF458F /* BusyBuyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B99BA9DC1BDC069800EF458F /* BusyBuy */ = {
+			isa = PBXGroup;
+			children = (
+				B9AA572C1BDC7D6600DF0405 /* Libraries */,
+				B9B36B4A1BDC4065001EF475 /* Vendor */,
+				B9B36B451BDC3A8A001EF475 /* Networking */,
+				B9B36B441BDC36C1001EF475 /* BusyBuy.entitlements */,
+				B9B36B2E1BDC0889001EF475 /* CoreData */,
+				B9B36B2F1BDC0889001EF475 /* CustomViews */,
+				B9B36B301BDC0889001EF475 /* Models */,
+				B9B36B311BDC0889001EF475 /* Resources */,
+				B9B36B321BDC0889001EF475 /* Storyboards */,
+				B9B36B331BDC0889001EF475 /* Utilities */,
+				B9B36B341BDC0889001EF475 /* ViewControllers */,
+				B9B36B3D1BDC199F001EF475 /* Supporting Files */,
+			);
+			path = BusyBuy;
+			sourceTree = "<group>";
+		};
+		B99BA9F11BDC069800EF458F /* BusyBuyTests */ = {
+			isa = PBXGroup;
+			children = (
+				B99BA9F21BDC069800EF458F /* BusyBuyTests.swift */,
+				B99BA9F41BDC069800EF458F /* Info.plist */,
+			);
+			path = BusyBuyTests;
+			sourceTree = "<group>";
+		};
+		B99BA9FC1BDC069800EF458F /* BusyBuyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B99BA9FD1BDC069800EF458F /* BusyBuyUITests.swift */,
+				B99BA9FF1BDC069800EF458F /* Info.plist */,
+			);
+			path = BusyBuyUITests;
+			sourceTree = "<group>";
+		};
+		B9AA572C1BDC7D6600DF0405 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				B9AA572D1BDC7D6600DF0405 /* DBeaconKit */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		B9AA572D1BDC7D6600DF0405 /* DBeaconKit */ = {
+			isa = PBXGroup;
+			children = (
+				B9AA572E1BDC7D6600DF0405 /* DBeaconKit.swift */,
+			);
+			path = DBeaconKit;
+			sourceTree = "<group>";
+		};
+		B9B36B2E1BDC0889001EF475 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		B9B36B2F1BDC0889001EF475 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				B93672161BDCFBE90095C016 /* MerchantTransactionCell.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		B9B36B301BDC0889001EF475 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B93672181BDD07B70095C016 /* Transaction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B9B36B311BDC0889001EF475 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B9AA57381BDC8C2900DF0405 /* KaushanScript.ttf */,
+				B99BA9E41BDC069800EF458F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B9B36B321BDC0889001EF475 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B99BA9E11BDC069800EF458F /* Main.storyboard */,
+				B99BA9E61BDC069800EF458F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B9B36B331BDC0889001EF475 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B9AA57481BDCC88900DF0405 /* DateHelper.swift */,
+				B9AA57491BDCC88900DF0405 /* UIColor+FlatColors.swift */,
+				B9AA574A1BDCC88900DF0405 /* UIFont+CapGram.swift */,
+				B9AA574B1BDCC88900DF0405 /* UITabBar+CapGram.swift */,
+				B9B36B3B1BDC1995001EF475 /* Configuration.swift */,
+				B9B36B401BDC1A00001EF475 /* Constants.swift */,
+				B9B36B421BDC220F001EF475 /* NotificationHelper.swift */,
+				B9AA573A1BDC90BE00DF0405 /* StoryBoard+Extensions.swift */,
+				B9AA57461BDCC7FD00DF0405 /* Theme.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B9B36B341BDC0889001EF475 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B9B36B351BDC0889001EF475 /* AppDelegate.swift */,
+				B9B36B361BDC0889001EF475 /* ViewController.swift */,
+				B9B36B391BDC18F6001EF475 /* AppDelegate+BusyBuy.swift */,
+				B9AA57301BDC861700DF0405 /* SignupViewController.swift */,
+				B9AA57321BDC862400DF0405 /* SignInViewController.swift */,
+				B9AA57341BDC863A00DF0405 /* NotificationRequestViewController.swift */,
+				B9AA57361BDC864C00DF0405 /* LocationAccessRequestViewController.swift */,
+				B9AA573C1BDC9F9900DF0405 /* LogInViewController.swift */,
+				B9AA573E1BDCAB5400DF0405 /* BarCodeViewController.swift */,
+				B9AA57421BDCC4AC00DF0405 /* OrderListViewController.swift */,
+				B9AA57501BDCDB7800DF0405 /* ProfileInputFormViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B9B36B3D1BDC199F001EF475 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B99BA9E91BDC069800EF458F /* Info.plist */,
+				B9B36B3E1BDC19B9001EF475 /* Configuration.plist */,
+				B9B36B4F1BDC41DA001EF475 /* BusyBuy-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9B36B451BDC3A8A001EF475 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B9B36B461BDC3A8A001EF475 /* HTTPClient.swift */,
+				B9B36B471BDC3A8A001EF475 /* HTTPManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B9B36B4A1BDC4065001EF475 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				B9AA572A1BDC609200DF0405 /* InAppSDK.framework */,
+				B9B36B551BDC562B001EF475 /* PayeezyClient.framework */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B99BA9D91BDC069800EF458F /* BusyBuy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B99BAA021BDC069800EF458F /* Build configuration list for PBXNativeTarget "BusyBuy" */;
+			buildPhases = (
+				EA15F155037D45C74B9F2124 /* Check Pods Manifest.lock */,
+				B99BA9D61BDC069800EF458F /* Sources */,
+				B99BA9D71BDC069800EF458F /* Frameworks */,
+				B99BA9D81BDC069800EF458F /* Resources */,
+				8B46FFC4745258804CD8C09C /* Embed Pods Frameworks */,
+				C9888037DA46176A0ED6BB43 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BusyBuy;
+			productName = BusyBuy;
+			productReference = B99BA9DA1BDC069800EF458F /* BusyBuy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B99BA9ED1BDC069800EF458F /* BusyBuyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B99BAA051BDC069800EF458F /* Build configuration list for PBXNativeTarget "BusyBuyTests" */;
+			buildPhases = (
+				B99BA9EA1BDC069800EF458F /* Sources */,
+				B99BA9EB1BDC069800EF458F /* Frameworks */,
+				B99BA9EC1BDC069800EF458F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B99BA9F01BDC069800EF458F /* PBXTargetDependency */,
+			);
+			name = BusyBuyTests;
+			productName = BusyBuyTests;
+			productReference = B99BA9EE1BDC069800EF458F /* BusyBuyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B99BA9F81BDC069800EF458F /* BusyBuyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B99BAA081BDC069800EF458F /* Build configuration list for PBXNativeTarget "BusyBuyUITests" */;
+			buildPhases = (
+				B99BA9F51BDC069800EF458F /* Sources */,
+				B99BA9F61BDC069800EF458F /* Frameworks */,
+				B99BA9F71BDC069800EF458F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B99BA9FB1BDC069800EF458F /* PBXTargetDependency */,
+			);
+			name = BusyBuyUITests;
+			productName = BusyBuyUITests;
+			productReference = B99BA9F91BDC069800EF458F /* BusyBuyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B99BA9D21BDC069800EF458F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Self;
+				TargetAttributes = {
+					B99BA9D91BDC069800EF458F = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = HCUYYCR5FS;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.OMC = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					B99BA9ED1BDC069800EF458F = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = B99BA9D91BDC069800EF458F;
+					};
+					B99BA9F81BDC069800EF458F = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = B99BA9D91BDC069800EF458F;
+					};
+				};
+			};
+			buildConfigurationList = B99BA9D51BDC069800EF458F /* Build configuration list for PBXProject "BusyBuy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B99BA9D11BDC069800EF458F;
+			productRefGroup = B99BA9DB1BDC069800EF458F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B99BA9D91BDC069800EF458F /* BusyBuy */,
+				B99BA9ED1BDC069800EF458F /* BusyBuyTests */,
+				B99BA9F81BDC069800EF458F /* BusyBuyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B99BA9D81BDC069800EF458F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B99BA9E81BDC069800EF458F /* LaunchScreen.storyboard in Resources */,
+				B9B36B3F1BDC19B9001EF475 /* Configuration.plist in Resources */,
+				B9AA57391BDC8C2900DF0405 /* KaushanScript.ttf in Resources */,
+				B99BA9E51BDC069800EF458F /* Assets.xcassets in Resources */,
+				B99BA9E31BDC069800EF458F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B99BA9EC1BDC069800EF458F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B99BA9F71BDC069800EF458F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B46FFC4745258804CD8C09C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BusyBuy/Pods-BusyBuy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9888037DA46176A0ED6BB43 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BusyBuy/Pods-BusyBuy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA15F155037D45C74B9F2124 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B99BA9D61BDC069800EF458F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9AA57331BDC862400DF0405 /* SignInViewController.swift in Sources */,
+				B9AA57431BDCC4AC00DF0405 /* OrderListViewController.swift in Sources */,
+				B9B36B431BDC220F001EF475 /* NotificationHelper.swift in Sources */,
+				B9AA572F1BDC7D6600DF0405 /* DBeaconKit.swift in Sources */,
+				B9AA57311BDC861700DF0405 /* SignupViewController.swift in Sources */,
+				B9AA57371BDC864C00DF0405 /* LocationAccessRequestViewController.swift in Sources */,
+				B9AA573F1BDCAB5400DF0405 /* BarCodeViewController.swift in Sources */,
+				B9B36B411BDC1A00001EF475 /* Constants.swift in Sources */,
+				B9AA574F1BDCC88900DF0405 /* UITabBar+CapGram.swift in Sources */,
+				B9B36B381BDC0889001EF475 /* ViewController.swift in Sources */,
+				B9AA57511BDCDB7800DF0405 /* ProfileInputFormViewController.swift in Sources */,
+				B9AA574D1BDCC88900DF0405 /* UIColor+FlatColors.swift in Sources */,
+				B9B36B481BDC3A8A001EF475 /* HTTPClient.swift in Sources */,
+				B9AA573D1BDC9F9900DF0405 /* LogInViewController.swift in Sources */,
+				B93672191BDD07B70095C016 /* Transaction.swift in Sources */,
+				B9AA574C1BDCC88900DF0405 /* DateHelper.swift in Sources */,
+				B9AA574E1BDCC88900DF0405 /* UIFont+CapGram.swift in Sources */,
+				B9AA573B1BDC90BE00DF0405 /* StoryBoard+Extensions.swift in Sources */,
+				B9B36B3A1BDC18F6001EF475 /* AppDelegate+BusyBuy.swift in Sources */,
+				B93672171BDCFBE90095C016 /* MerchantTransactionCell.swift in Sources */,
+				B9B36B3C1BDC1995001EF475 /* Configuration.swift in Sources */,
+				B9AA57351BDC863A00DF0405 /* NotificationRequestViewController.swift in Sources */,
+				B9AA57471BDCC7FD00DF0405 /* Theme.swift in Sources */,
+				B9B36B371BDC0889001EF475 /* AppDelegate.swift in Sources */,
+				B9B36B491BDC3A8A001EF475 /* HTTPManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B99BA9EA1BDC069800EF458F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B99BA9F31BDC069800EF458F /* BusyBuyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B99BA9F51BDC069800EF458F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B99BA9FE1BDC069800EF458F /* BusyBuyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B99BA9F01BDC069800EF458F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B99BA9D91BDC069800EF458F /* BusyBuy */;
+			targetProxy = B99BA9EF1BDC069800EF458F /* PBXContainerItemProxy */;
+		};
+		B99BA9FB1BDC069800EF458F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B99BA9D91BDC069800EF458F /* BusyBuy */;
+			targetProxy = B99BA9FA1BDC069800EF458F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B99BA9E11BDC069800EF458F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B99BA9E21BDC069800EF458F /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B99BA9E61BDC069800EF458F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B99BA9E71BDC069800EF458F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B99BAA001BDC069800EF458F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B99BAA011BDC069800EF458F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B99BAA031BDC069800EF458F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32E8288405D7504F3C9AF060 /* Pods-BusyBuy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BusyBuy/BusyBuy.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BusyBuy/Vendor",
+				);
+				INFOPLIST_FILE = BusyBuy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.money2020.BusyBuy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BusyBuy/BusyBuy-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		B99BAA041BDC069800EF458F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D4ECB1C9FC953DB087613C3 /* Pods-BusyBuy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BusyBuy/BusyBuy.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BusyBuy/Vendor",
+				);
+				INFOPLIST_FILE = BusyBuy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.money2020.BusyBuy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BusyBuy/BusyBuy-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		B99BAA061BDC069800EF458F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BusyBuyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.money2020.BusyBuyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BusyBuy.app/BusyBuy";
+			};
+			name = Debug;
+		};
+		B99BAA071BDC069800EF458F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BusyBuyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.money2020.BusyBuyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BusyBuy.app/BusyBuy";
+			};
+			name = Release;
+		};
+		B99BAA091BDC069800EF458F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BusyBuyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.money2020.BusyBuyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BusyBuy;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B99BAA0A1BDC069800EF458F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BusyBuyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.money2020.BusyBuyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BusyBuy;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B99BA9D51BDC069800EF458F /* Build configuration list for PBXProject "BusyBuy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B99BAA001BDC069800EF458F /* Debug */,
+				B99BAA011BDC069800EF458F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B99BAA021BDC069800EF458F /* Build configuration list for PBXNativeTarget "BusyBuy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B99BAA031BDC069800EF458F /* Debug */,
+				B99BAA041BDC069800EF458F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B99BAA051BDC069800EF458F /* Build configuration list for PBXNativeTarget "BusyBuyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B99BAA061BDC069800EF458F /* Debug */,
+				B99BAA071BDC069800EF458F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B99BAA081BDC069800EF458F /* Build configuration list for PBXNativeTarget "BusyBuyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B99BAA091BDC069800EF458F /* Debug */,
+				B99BAA0A1BDC069800EF458F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B99BA9D21BDC069800EF458F /* Project object */;
+}
