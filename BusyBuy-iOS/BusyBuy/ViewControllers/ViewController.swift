@@ -23,7 +23,15 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
-        if let _ = PFUser.currentUser() {
+        if let auser = PFUser.currentUser() {
+            let installation =  PFInstallation.currentInstallation()
+            installation.setObject(auser, forKey: "owner")
+            installation.saveInBackgroundWithBlock({ (succesS:Bool, error: NSError?) -> Void in
+                if succesS {
+                    print("saved")
+                }
+            })
+
             self.performSegueWithIdentifier(.HomeViewSegue, sender: self)
         } else {
             self.performSegueWithIdentifier(.LogInViewSegue, sender: self)

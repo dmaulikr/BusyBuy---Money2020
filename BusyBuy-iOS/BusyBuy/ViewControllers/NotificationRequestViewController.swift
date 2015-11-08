@@ -11,6 +11,9 @@ import UIKit
 
 class NotificationViewController: UIViewController {
     @IBOutlet weak var notifyMeSwitch: UISwitch!
+    
+    weak var parentVC: LoginViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -44,6 +47,7 @@ class NotificationViewController: UIViewController {
         userDefaults.setBool(notifyMeSwitch.on, forKey: Notification.On.key())
         userDefaults.synchronize()
         
+        self.parentVC?.updateDeviceDetails()
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 }

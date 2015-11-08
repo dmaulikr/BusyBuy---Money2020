@@ -15,31 +15,35 @@ class BarCodeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let installation = PFInstallation.currentInstallation()
-        
-        let deviceToken = installation.deviceToken
-        let userId = PFUser.currentUser()?.objectId
-        
-        print(userId!)
-        print(deviceToken!)
-        
-        let json_String = "{\"device_token\": \(deviceToken!), \"customer_id\" : \(userId!)}"
-        
-        let filter = CIFilter(name: "CIQRCodeGenerator")
-        filter!.setValue(json_String.dataUsingEncoding(NSISOLatin1StringEncoding, allowLossyConversion: false), forKey: "inputMessage")
-        filter!.setValue("Q", forKey: "inputCorrectionLevel")
-        
-        imgVw_barCode.image = UIImage(CIImage: filter!.outputImage!)
     }
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
     }
     
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
     
+        let installation = PFInstallation.currentInstallation()
+        
+        let deviceToken = installation.deviceToken
+        let userId = PFUser.currentUser()?.objectId
+        
+        print(userId)
+        print(deviceToken)
+        
+        guard let token = deviceToken, user = userId else {
+            showAlertController(withTitle: "User/Device details unavailable", msg: "Unable to access user or device credentials to generate unique code")
+            return
+        }
+        
+        let json_String = "{\"device_token\": \(token), \"customer_id\" : \(user)}"
+        
+        let filter = CIFilter(name: "CIQRCodeGenerator")
+        filter!.setValue(json_String.dataUsingEncoding(NSISOLatin1StringEncoding, allowLossyConversion: false), forKey: "inputMessage")
+        filter!.setValue("Q", forKey: "inputCorrectionLevel")
+        
+        imgVw_barCode.image = UIImage(CIImage: filter!.outputImage!)
     }
     
     override func didReceiveMemoryWarning() {

@@ -1,9 +1,9 @@
 //
-//  UIFont+CapGram.swift
-//  CapGram
+//  UIFont+Busy Buy.swift
+//  Busy Buy
 //
 //  Created by Prasad Pamidi on 8/14/15.
-//  Copyright (c) 2015 Capgemini. All rights reserved.
+//  Copyright (c) 2015. All rights reserved.
 //
 
 import UIKit

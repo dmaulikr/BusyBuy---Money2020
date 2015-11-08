@@ -98,9 +98,17 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         case (.Some(_), .Some(_)) where (username?.characters.count > 0 && password?.characters.count > 0) :
             logInActivityIndicator.hidden = false
             self.txtFd_Password.resignFirstResponder()
-            
             PFUser.logInWithUsernameInBackground(username!, password: password!, block: { (user: PFUser?, error: NSError?) -> Void in
+                
+               self.logInActivityIndicator.hidden = true
+                
                 if let auser = user {
+                    let userDefaults = NSUserDefaults.defaults()
+                    if (!userDefaults.boolForKey(Notification.On.key())) {
+                        self.performSegueWithIdentifier(.NotificationAccessViewSegue, sender: self)
+                        return
+                    }
+                    
                     let installation =  PFInstallation.currentInstallation()
                     installation.setObject(auser, forKey: "owner")
                     installation.saveInBackgroundWithBlock({ (succesS:Bool, error: NSError?) -> Void in
@@ -109,6 +117,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                         }
                     })
                 }
+                
                 self.dismissViewControllerAnimated(true, completion: nil)
             })
         case (.Some(_), .None):
@@ -122,11 +131,39 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    @IBAction func unwindToRootViewController(sender: UIStoryboardSegue) {
+        if let _ = sender.sourceViewController
+            as? ViewController {
+        }
+    }
+    
     @IBAction func userTappedScreen(sender: AnyObject) {
         if txtFd_Password.isFirstResponder() {
             txtFd_Password.resignFirstResponder()
         } else if txtFd_Username.isFirstResponder() {
             txtFd_Username.resignFirstResponder()
+        }
+    }
+    
+    func updateDeviceDetails() {
+        guard let auser = PFUser.currentUser() else {
+            return
+        }
+        
+        let installation =  PFInstallation.currentInstallation()
+        installation.setObject(auser, forKey: "owner")
+        installation.saveInBackgroundWithBlock({ (succesS:Bool, error: NSError?) -> Void in
+            if succesS {
+                print("saved")
+            }
+        })
+    
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let destVC = segue.destinationViewController as? NotificationViewController where segue.identifier == SegueIdentifier.NotificationAccessViewSegue.rawValue {
+            destVC.parentVC = self
         }
     }
 }

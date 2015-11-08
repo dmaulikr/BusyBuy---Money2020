@@ -19,7 +19,6 @@
 		B9AA572B1BDC609200DF0405 /* InAppSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9AA572A1BDC609200DF0405 /* InAppSDK.framework */; };
 		B9AA572F1BDC7D6600DF0405 /* DBeaconKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA572E1BDC7D6600DF0405 /* DBeaconKit.swift */; };
 		B9AA57311BDC861700DF0405 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA57301BDC861700DF0405 /* SignupViewController.swift */; };
-		B9AA57331BDC862400DF0405 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA57321BDC862400DF0405 /* SignInViewController.swift */; };
 		B9AA57351BDC863A00DF0405 /* NotificationRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA57341BDC863A00DF0405 /* NotificationRequestViewController.swift */; };
 		B9AA57371BDC864C00DF0405 /* LocationAccessRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA57361BDC864C00DF0405 /* LocationAccessRequestViewController.swift */; };
 		B9AA57391BDC8C2900DF0405 /* KaushanScript.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9AA57381BDC8C2900DF0405 /* KaushanScript.ttf */; };
@@ -30,8 +29,8 @@
 		B9AA57471BDCC7FD00DF0405 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA57461BDCC7FD00DF0405 /* Theme.swift */; };
 		B9AA574C1BDCC88900DF0405 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA57481BDCC88900DF0405 /* DateHelper.swift */; };
 		B9AA574D1BDCC88900DF0405 /* UIColor+FlatColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA57491BDCC88900DF0405 /* UIColor+FlatColors.swift */; };
-		B9AA574E1BDCC88900DF0405 /* UIFont+CapGram.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA574A1BDCC88900DF0405 /* UIFont+CapGram.swift */; };
-		B9AA574F1BDCC88900DF0405 /* UITabBar+CapGram.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA574B1BDCC88900DF0405 /* UITabBar+CapGram.swift */; };
+		B9AA574E1BDCC88900DF0405 /* UIFont+BusyBuy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA574A1BDCC88900DF0405 /* UIFont+BusyBuy.swift */; };
+		B9AA574F1BDCC88900DF0405 /* UITabBar+BusyBuy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA574B1BDCC88900DF0405 /* UITabBar+BusyBuy.swift */; };
 		B9AA57511BDCDB7800DF0405 /* ProfileInputFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AA57501BDCDB7800DF0405 /* ProfileInputFormViewController.swift */; };
 		B9B36B371BDC0889001EF475 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B36B351BDC0889001EF475 /* AppDelegate.swift */; };
 		B9B36B381BDC0889001EF475 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B36B361BDC0889001EF475 /* ViewController.swift */; };
@@ -85,7 +84,6 @@
 		B9AA572A1BDC609200DF0405 /* InAppSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InAppSDK.framework; sourceTree = "<group>"; };
 		B9AA572E1BDC7D6600DF0405 /* DBeaconKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBeaconKit.swift; sourceTree = "<group>"; };
 		B9AA57301BDC861700DF0405 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
-		B9AA57321BDC862400DF0405 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		B9AA57341BDC863A00DF0405 /* NotificationRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationRequestViewController.swift; sourceTree = "<group>"; };
 		B9AA57361BDC864C00DF0405 /* LocationAccessRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationAccessRequestViewController.swift; sourceTree = "<group>"; };
 		B9AA57381BDC8C2900DF0405 /* KaushanScript.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KaushanScript.ttf; sourceTree = "<group>"; };
@@ -96,8 +94,8 @@
 		B9AA57461BDCC7FD00DF0405 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		B9AA57481BDCC88900DF0405 /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		B9AA57491BDCC88900DF0405 /* UIColor+FlatColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+FlatColors.swift"; sourceTree = "<group>"; };
-		B9AA574A1BDCC88900DF0405 /* UIFont+CapGram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+CapGram.swift"; sourceTree = "<group>"; };
-		B9AA574B1BDCC88900DF0405 /* UITabBar+CapGram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBar+CapGram.swift"; sourceTree = "<group>"; };
+		B9AA574A1BDCC88900DF0405 /* UIFont+BusyBuy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+BusyBuy.swift"; sourceTree = "<group>"; };
+		B9AA574B1BDCC88900DF0405 /* UITabBar+BusyBuy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBar+BusyBuy.swift"; sourceTree = "<group>"; };
 		B9AA57501BDCDB7800DF0405 /* ProfileInputFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileInputFormViewController.swift; sourceTree = "<group>"; };
 		B9B36B351BDC0889001EF475 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9B36B361BDC0889001EF475 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -287,8 +285,8 @@
 			children = (
 				B9AA57481BDCC88900DF0405 /* DateHelper.swift */,
 				B9AA57491BDCC88900DF0405 /* UIColor+FlatColors.swift */,
-				B9AA574A1BDCC88900DF0405 /* UIFont+CapGram.swift */,
-				B9AA574B1BDCC88900DF0405 /* UITabBar+CapGram.swift */,
+				B9AA574A1BDCC88900DF0405 /* UIFont+BusyBuy.swift */,
+				B9AA574B1BDCC88900DF0405 /* UITabBar+BusyBuy.swift */,
 				B9B36B3B1BDC1995001EF475 /* Configuration.swift */,
 				B9B36B401BDC1A00001EF475 /* Constants.swift */,
 				B9B36B421BDC220F001EF475 /* NotificationHelper.swift */,
@@ -305,7 +303,6 @@
 				B9B36B361BDC0889001EF475 /* ViewController.swift */,
 				B9B36B391BDC18F6001EF475 /* AppDelegate+BusyBuy.swift */,
 				B9AA57301BDC861700DF0405 /* SignupViewController.swift */,
-				B9AA57321BDC862400DF0405 /* SignInViewController.swift */,
 				B9AA57341BDC863A00DF0405 /* NotificationRequestViewController.swift */,
 				B9AA57361BDC864C00DF0405 /* LocationAccessRequestViewController.swift */,
 				B9AA573C1BDC9F9900DF0405 /* LogInViewController.swift */,
@@ -540,7 +537,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9AA57331BDC862400DF0405 /* SignInViewController.swift in Sources */,
 				B9AA57431BDCC4AC00DF0405 /* OrderListViewController.swift in Sources */,
 				B9B36B431BDC220F001EF475 /* NotificationHelper.swift in Sources */,
 				B9AA572F1BDC7D6600DF0405 /* DBeaconKit.swift in Sources */,
@@ -548,7 +544,7 @@
 				B9AA57371BDC864C00DF0405 /* LocationAccessRequestViewController.swift in Sources */,
 				B9AA573F1BDCAB5400DF0405 /* BarCodeViewController.swift in Sources */,
 				B9B36B411BDC1A00001EF475 /* Constants.swift in Sources */,
-				B9AA574F1BDCC88900DF0405 /* UITabBar+CapGram.swift in Sources */,
+				B9AA574F1BDCC88900DF0405 /* UITabBar+BusyBuy.swift in Sources */,
 				B9B36B381BDC0889001EF475 /* ViewController.swift in Sources */,
 				B9AA57511BDCDB7800DF0405 /* ProfileInputFormViewController.swift in Sources */,
 				B9AA574D1BDCC88900DF0405 /* UIColor+FlatColors.swift in Sources */,
@@ -556,7 +552,7 @@
 				B9AA573D1BDC9F9900DF0405 /* LogInViewController.swift in Sources */,
 				B93672191BDD07B70095C016 /* Transaction.swift in Sources */,
 				B9AA574C1BDCC88900DF0405 /* DateHelper.swift in Sources */,
-				B9AA574E1BDCC88900DF0405 /* UIFont+CapGram.swift in Sources */,
+				B9AA574E1BDCC88900DF0405 /* UIFont+BusyBuy.swift in Sources */,
 				B9AA573B1BDC90BE00DF0405 /* StoryBoard+Extensions.swift in Sources */,
 				B9B36B3A1BDC18F6001EF475 /* AppDelegate+BusyBuy.swift in Sources */,
 				B93672171BDCFBE90095C016 /* MerchantTransactionCell.swift in Sources */,

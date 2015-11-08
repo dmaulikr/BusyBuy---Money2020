@@ -16,8 +16,6 @@ enum SegueIdentifier:String {
     case LocationAccessViewSegue
     case LogOutViewSegue
     case ProfileViewSegue
-    case RosterProfileViewSegue
-    case FilterViewSegue
 }
 
 extension UIViewController {
@@ -32,7 +30,7 @@ enum StoryboardNames : String {
 }
 
 enum ViewControllerStoryboardIdentifier : String {
-    case RosterResultsViewController = "RosterResultsViewController"
+    case ProfileViewController
 }
 
 extension UIStoryboard {
