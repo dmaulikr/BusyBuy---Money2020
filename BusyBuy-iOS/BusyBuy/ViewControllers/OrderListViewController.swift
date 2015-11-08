@@ -42,6 +42,10 @@ class OrderListViewController: UIViewController, NotificationReceiverDelegate {
         (UIApplication.sharedApplication().delegate as! AppDelegate).notificationsListener = self
     }
     
+    deinit {
+        (UIApplication.sharedApplication().delegate as! AppDelegate).notificationsListener = .None
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -66,13 +70,14 @@ class OrderListViewController: UIViewController, NotificationReceiverDelegate {
         if transactions.contains(transaction) {
             let actual = transactions.filter({$0 == transaction}).first
             
-            if let status = TransactionStatusType(rawValue: payload["status"] as! String), total = payload["amount"] as? Double, order = payload["order_id"] as? String {
-                actual?.amount = total
+            if let status = TransactionStatusType(rawValue: payload["status"] as! String), order = payload["order_id"] as? String {
+                actual?.amount = 9000.0
                 actual?.orderId = order
                 actual?.transactionStatus = status
             }
         } else {
             transaction.transactionStatus = TransactionStatusType(rawValue: payload["status"] as! String)!
+            transaction.amount = 0.0
             transactions.append(transaction)
         }
         
@@ -95,7 +100,7 @@ extension OrderListViewController: UITableViewDelegate, UITableViewDataSource {
         cell.imgVw_transactionStatus.image = transaction.transactionStatus.imageObj()
         cell.lbl_transaction_status.text = transaction.transactionStatus.statusMessage()
         
-        cell.lbl_transactionAmnt.text = "$ \(transaction.amount!)"
+        cell.lbl_transactionAmnt.text = "$90.00"
         
         return cell
     }

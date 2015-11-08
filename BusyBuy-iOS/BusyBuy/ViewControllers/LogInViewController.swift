@@ -100,13 +100,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             self.txtFd_Password.resignFirstResponder()
             
             PFUser.logInWithUsernameInBackground(username!, password: password!, block: { (user: PFUser?, error: NSError?) -> Void in
-                let installation =  PFInstallation.currentInstallation()
-                installation.setObject(user!, forKey: "owner")
-                installation.saveInBackgroundWithBlock({ (succesS:Bool, error: NSError?) -> Void in
-                    if succesS {
-                        print("saved")
-                    }
-                })
+                if let auser = user {
+                    let installation =  PFInstallation.currentInstallation()
+                    installation.setObject(auser, forKey: "owner")
+                    installation.saveInBackgroundWithBlock({ (succesS:Bool, error: NSError?) -> Void in
+                        if succesS {
+                            print("saved")
+                        }
+                    })
+                }
                 self.dismissViewControllerAnimated(true, completion: nil)
             })
         case (.Some(_), .None):

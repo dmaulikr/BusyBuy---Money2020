@@ -630,7 +630,8 @@ Please enable notifications to remind when your order is ready to pickup</string
                                                             <exclude reference="jx6-dw-lju"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="8" y="12" width="161" height="62"/>
                                                         <mask key="constraints">
                                                             <include reference="jx6-dw-lju"/>
                                                         </mask>
@@ -649,7 +650,8 @@ Please enable notifications to remind when your order is ready to pickup</string
                                                             <exclude reference="mCz-Tz-CZ4"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="8" y="93" width="96" height="36"/>
                                                         <mask key="constraints">
                                                             <include reference="mCz-Tz-CZ4"/>
                                                         </mask>
@@ -670,7 +672,8 @@ Please enable notifications to remind when your order is ready to pickup</string
                                                             <exclude reference="gsu-dc-gvj"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="8" y="150" width="224" height="21"/>
                                                         <mask key="constraints">
                                                             <exclude reference="VZi-bp-DRL"/>
                                                             <include reference="gsu-dc-gvj"/>
@@ -692,7 +695,8 @@ Please enable notifications to remind when your order is ready to pickup</string
                                                             <exclude reference="pfl-ka-1dG"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="130" y="93" width="98" height="36"/>
                                                         <mask key="constraints">
                                                             <include reference="Jcc-ZR-UtQ"/>
                                                             <include reference="pfl-ka-1dG"/>
@@ -715,7 +719,8 @@ Please enable notifications to remind when your order is ready to pickup</string
                                                             <exclude reference="yfM-Zd-XMf"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="182" y="24" width="50" height="50"/>
                                                         <mask key="constraints">
                                                             <include reference="XzL-eC-ZQ1"/>
                                                             <include reference="yfM-Zd-XMf"/>
@@ -760,14 +765,14 @@ Please enable notifications to remind when your order is ready to pickup</string
                                                 <mask key="constraints">
                                                     <exclude reference="1b8-5b-Dbe"/>
                                                     <exclude reference="Gin-66-F6l"/>
-                                                    <exclude reference="Ja8-mp-aeK"/>
-                                                    <exclude reference="gtT-Pz-gl7"/>
                                                     <exclude reference="0kD-ck-Qq6"/>
                                                     <exclude reference="Ayg-sF-Vvu"/>
                                                     <exclude reference="DAU-i9-yji"/>
                                                     <exclude reference="jrW-t9-CXD"/>
                                                     <exclude reference="9qU-MY-pPH"/>
                                                     <exclude reference="M8L-tT-Psf"/>
+                                                    <exclude reference="Ja8-mp-aeK"/>
+                                                    <exclude reference="gtT-Pz-gl7"/>
                                                     <exclude reference="1UX-xs-1ko"/>
                                                     <exclude reference="ZqA-VZ-XB8"/>
                                                     <exclude reference="hBp-DR-l4e"/>
@@ -785,14 +790,14 @@ Please enable notifications to remind when your order is ready to pickup</string
                                                 <mask key="constraints">
                                                     <include reference="1b8-5b-Dbe"/>
                                                     <include reference="Gin-66-F6l"/>
-                                                    <include reference="Ja8-mp-aeK"/>
-                                                    <include reference="gtT-Pz-gl7"/>
                                                     <include reference="0kD-ck-Qq6"/>
                                                     <exclude reference="Ayg-sF-Vvu"/>
                                                     <include reference="DAU-i9-yji"/>
                                                     <include reference="jrW-t9-CXD"/>
                                                     <include reference="9qU-MY-pPH"/>
                                                     <include reference="M8L-tT-Psf"/>
+                                                    <include reference="Ja8-mp-aeK"/>
+                                                    <include reference="gtT-Pz-gl7"/>
                                                     <include reference="1UX-xs-1ko"/>
                                                     <include reference="ZqA-VZ-XB8"/>
                                                     <include reference="hBp-DR-l4e"/>
